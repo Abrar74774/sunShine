@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap'); /*Quicksand*/
+* {box-sizing: border-box;}
+body {
+  margin: 0;
+  padding: 0;
+  background-color:rgb(203, 231, 255);
+  -webkit-transition:color 2s ease-out;
+  transition:background-color 2s ease-out;
+  height: 100px;
+  width: 1366px;
+  position: relative;
+}
+.canvas {
+  overflow: hidden;
+  height: 768px;
+}
+#navbar {  
+  display: flex;
+  background-color: rgba(0,0,0,0);
+  width:263px;
+  height: auto;
+  z-index: 10;
+  flex-direction: column;
+  position: absolute;
+  top:95px;   
+}
+#navbar a {
+  text-decoration: none;
+  text-align: center;
+  border-right:10px solid rgba(94, 94, 94,1);
+  color:rgba(0,0,0,0.7);  
+  font-family: Quicksand, sans-serif;
+  font-size: 24px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.226);
+  padding: 20px 40px;
+  margin:20px;  
+  position: relative;
+  right: 245px;  
+  -webkit-transition:right 1s;  
+  transition: right 1s;
+}
+#navbar a:hover {
+  right:20px !important;
+}
+#header {
+   font-family: Quicksand, sans-serif;
+   font-size: 52px;
+   text-align: center;
+   color: rgba(0,0,0,0);
+   -webkit-transition: color 2s;
+   transition: color 2s;   
+   height:110px;
+   width: auto;
+   padding: 55px;
+   position: relative;
+   z-index: 10;
+}
+.sun {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  left: 500px;
+  top: 200px;
+  
+}
+.sunray1 {
+  height: 500px;
+  width: 900px;
+  border-radius: 50%;
+  background-color: #f4faf9;
+  position: absolute;
+  left:300px;
+  top:100px;
+  
+}
+#sunray2 {                      
+  height: 1000px;
+  width: 1600px;
+  border-radius: 50%;
+  background-color: #eafbff;
+  position: relative;
+  left:200px;
+  bottom:50px;
+  transition:bottom 2s ease-out;  
+}
+
+#ground1 {
+  background-color: rgb(107, 158, 29);
+  width: 800px;
+  height: 600px;
+  border-top-right-radius: 70%;
+  position: relative;
+  bottom:700px;
+  -webkit-transition: background-color 2s ease-out ;
+  transition:background-color 2s ease-out;
+}
+#ground2 {
+  background-color: rgb(107, 158, 29);
+  width: 1000px;
+  height: 600px;
+  border-top-left-radius: 70%;
+  position: relative;
+  bottom:1300px;
+  left:400px;
+  -webkit-transition: background-color 2s ease-out ;
+  transition:background-color 2s ease-out;
+}
+#treetrunk {
+  height:200px;
+  width:50px;
+  background-color: rgb(155, 127, 68);
+  position:relative;
+  left:100px;
+  -webkit-transition: background-color 2s ease-out ;
+  transition:background-color 2s ease-out;
+}
+#treeleaves {
+  height:200px;
+  width:220px;
+  border-radius: 50%;
+  background-color: green;
+  position: absolute;
+  left:-85px;
+  bottom:130px;
+  -webkit-transition: background-color 2s ease-out ;
+  transition:background-color 2s ease-out;
+}
+#treeshadow {
+  background-color: rgb(0, 50, 0);
+  height:200px;
+  width:50px;
+  -webkit-transform: skew(-60deg, 0deg);
+  -moz-transform:skew(-60deg, 0deg);
+  -o-transform:skew(-60deg, 0deg);
+  -ms-transform:skew(-60deg, 0deg);
+  transform: skew(-60deg, 0deg);
+  position: relative;
+  top:200px;
+  right: 173px;
+  -webkit-transition:color 2s ease-out;
+  transition:background-color 2s ease-out;
+}
+
+@media screen and (min-width:1346px) and (min-height:648px) {
+  body{
+    overflow: hidden;
+  }
+}
